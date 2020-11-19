@@ -6,7 +6,7 @@ import com.cg.oicrs.model.Claim;
 
 public interface IClaimRepository {
 	
-	public Claim create Claim(Claim claim) throws SQLException;
+	public Claim createClaim(Claim claim) throws SQLException;
 	
 	public Claim getDetailedClaimReportView(int claimNumber) throws SQLException;
 	

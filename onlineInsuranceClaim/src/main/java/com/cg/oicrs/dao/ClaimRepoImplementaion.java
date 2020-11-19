@@ -8,13 +8,13 @@ import java.sql.SQLException;
 import com.cg.oicrs.exception.UserNotFoundException;
 import com.cg.oicrs.model.Claim;
 
-public class ClaimRepoImplementaion implements IClaimRepository {
+public abstract class ClaimRepoImplementaion implements IClaimRepository {
 	
 	Connection conn;
 	PreparedStatement psmt;
 	ResultSet resultSet;
 	
-	public ClaimRepoImplemetation() {
+	public ClaimRepoImplementaion() {
 		
 		try {
 			
@@ -96,6 +96,8 @@ public class ClaimRepoImplementaion implements IClaimRepository {
 		claim.setAccidentZip(resultSet.getInt("accidentZip"));
 		claim.setClaimType(resultSet.getString("claimType"));
 		claim.setPolicyNumber(resultSet.getInt("policyNumber"));
+		
+		return claim;
 		
 	}
 
