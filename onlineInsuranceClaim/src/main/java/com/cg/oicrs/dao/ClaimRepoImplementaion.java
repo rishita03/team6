@@ -101,4 +101,9 @@ public abstract class ClaimRepoImplementaion implements IClaimRepository {
 		
 	}
 
+	public static void claimCreation(Claim claim) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

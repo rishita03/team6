@@ -4,4 +4,52 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ClaimReport</servlet-name>
+  	<display-name>ClaimReport</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.ClaimReport</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ClaimReportServlet</servlet-name>
+  	<display-name>ClaimReportServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.ClaimReportServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ClaimServlet</servlet-name>
+  	<display-name>ClaimServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.ClaimServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ClaimCreate</servlet-name>
+  	<display-name>ClaimCreate</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.ClaimCreate</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ClaimCreationController</servlet-name>
+  	<display-name>ClaimCreationController</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.ClaimCreationController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ClaimQuestionsController</servlet-name>
+  	<display-name>ClaimQuestionsController</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.ClaimQuestionsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClaimCreate</servlet-name>
+  	<url-pattern>/ClaimCreate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ClaimCreationController</servlet-name>
+  	<url-pattern>/ClaimCreationController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ClaimQuestionsController</servlet-name>
+  	<url-pattern>/ClaimQuestionsController</url-pattern>
+  </servlet-mapping>
 </web-app>

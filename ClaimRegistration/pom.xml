@@ -4,21 +4,19 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.cg</groupId>
-  <artifactId>onlineInsuranceClaim</artifactId>
+  <groupId>com.cg.oicrs.plp</groupId>
+  <artifactId>ClaimRegistration</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  
- 
 
-  <name>onlineInsuranceClaim Maven Webapp</name>
+  <name>ClaimRegistration Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -28,17 +26,10 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    
-    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.12.1</version>
-</dependency>
   </dependencies>
 
   <build>
-    <finalName>onlineInsuranceClaim</finalName>
+    <finalName>ClaimRegistration</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
