@@ -4,31 +4,30 @@ public class Claim {
 	
 	private int claimNumber;
 	private String claimReason;
-	private String accidentLoactionStreet;
+	private String accidentLocationStreet;
 	private String accidentCity;
 	private String accidentState;
 	private int accidentZip;
 	private String claimType;
 	private int policyNumber;
-
+	//private String accidentLocationStreet;
 
 	public Claim() {
-
+		
 	}
 
-	public Claim(int claimNumber, String claimReason, String accidentLoactionStreet, String accidentCity,
+	public Claim(int claimNumber, String claimReason, String accidentLocationStreet, String accidentCity,
 	String accidentState, int accidentZip, String claimType, int policyNumber) {
 	super();
 	this.claimNumber = claimNumber;
 	this.claimReason = claimReason;
-	this.accidentLoactionStreet = accidentLoactionStreet;
+	this.accidentLocationStreet= accidentLocationStreet;
 	this.accidentCity = accidentCity;
 	this.accidentState = accidentState;
 	this.accidentZip = accidentZip;
 	this.claimType = claimType;
 	this.policyNumber = policyNumber;
 	}
-
 
 	public int getClaimNumber() {
 	return claimNumber;
@@ -50,13 +49,13 @@ public class Claim {
 	}
 
 
-	public String getAccidentLoactionStreet() {
-	return accidentLoactionStreet;
+	public String getAccidentLocationStreet() {
+	return getAccidentLocationStreet();
 	}
 
 
-	public void setAccidentLoactionStreet(String accidentLoactionStreet) {
-	this.accidentLoactionStreet = accidentLoactionStreet;
+	public void setAccidentLoactionStreet(String accidentLocationStreet) {
+	this.accidentLocationStreet = accidentLocationStreet;
 	}
 
 
@@ -113,7 +112,7 @@ public class Claim {
 	@Override
 	public String toString() {
 	return "Claim [claimNumber=" + claimNumber + ", claimReason=" + claimReason + ", accidentLoactionStreet="
-	+ accidentLoactionStreet + ", accidentCity=" + accidentCity + ", accidentState=" + accidentState
+	+ accidentLocationStreet + ", accidentCity=" + accidentCity + ", accidentState=" + accidentState
 	+ ", accidentZip=" + accidentZip + ", claimType=" + claimType + ", policyNumber=" + policyNumber + "]";
 	
 	}

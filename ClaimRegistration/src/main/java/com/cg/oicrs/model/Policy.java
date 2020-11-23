@@ -1,52 +1,44 @@
 package com.cg.oicrs.model;
 
 public class Policy {
+
+	private long policyNumber;
+	private float policyPremium;
+	public int accountNumber;
 	
-	private int policyNumber;
-	private int policyPremium;
-	private int accountNumber;
-	public Policy()
-	{
-
+	
+	public long getPolicyNumber() {
+		return policyNumber;
 	}
-	public Policy(int policyNumber, int policyPremium, int accountNumber)
-	{
-	super();
-	this.policyNumber = policyNumber;
-	this.policyPremium = policyPremium;
-	this.accountNumber = accountNumber;
+	public void setPolicyNumber(long l) {
+		this.policyNumber = l;
 	}
-
-	public int getPolicyNumber()
-	{
-	return policyNumber;
+	public float getPolicyPremium() {
+		return policyPremium;
 	}
-	public void setPolicyNumber(int policyNumber)
-	{
-	this.policyNumber = policyNumber;
+	public void setPolicyPremium(float policyPremium) {
+		this.policyPremium = policyPremium;
 	}
-	public int getPolicyPremium()
-	{
-	return policyPremium;
+	public int getAccountNumber() {
+		return accountNumber;
 	}
-	public void setPolicyPremium(int policyPremium)
-	{
-	this.policyPremium = policyPremium;
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
 	}
-	public int getAccountNumber()
-	{
-	return accountNumber;
+	public Policy() {
+		// TODO Auto-generated constructor stub
 	}
-	public void setAccountNumber(int accountNumber)
-	{
-	this.accountNumber = accountNumber;
+	public Policy(int policyNumber, float policyPremium, int accountNumber) {
+		super();
+		this.policyNumber = policyNumber;
+		this.policyPremium = policyPremium;
+		this.accountNumber = accountNumber;
 	}
 	@Override
-	public String toString()
-	{
-	return "Policy [policyNumber=" + policyNumber + ", policyPremium=" + policyPremium + ", accountNumber="
-	+ accountNumber + "]";
-
+	public String toString() {
+		return "Policy [policyNumber=" + policyNumber + ", policyPremium=" + policyPremium + ", accountNumber="
+				+ accountNumber + "]";
 	}
+	
 
 }
