@@ -10,4 +10,34 @@
   	<description></description>
   	<servlet-class>com.cg.oicrs.controller.ClaimReport</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UserCreation</servlet-name>
+  	<display-name>UserCreation</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.UserCreation</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ClaimCreate</servlet-name>
+  	<display-name>ClaimCreate</display-name>
+  	<description></description>
+  	<servlet-class>com.cg.oicrs.controller.ClaimCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserCreation</servlet-name>
+  	<url-pattern>/UserCreation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ClaimCreate</servlet-name>
+  	<url-pattern>/ClaimCreate</url-pattern>
+  </servlet-mapping>
 </web-app>
